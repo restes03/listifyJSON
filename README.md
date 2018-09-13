@@ -1,6 +1,10 @@
 # listifyJSON
 Client side vanilla JS that generates a collapsible list from JSON, which can be sorted by keys
 
+    <!-- include source file -->
+    <script src="listifyJSON.js"></script>
+    
+    <script>
     // json object
     var data = {'some': 'object', 'can': {'be': 'nested'}} 
     
@@ -25,3 +29,4 @@ Client side vanilla JS that generates a collapsible list from JSON, which can be
     
     // Generate listified JSON and append to parent container
     document.getElementById('main').appendChild(generateListifiedJSON(sortedObject, default_sortKey));
+    </script>
